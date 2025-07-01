@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #one{
+            background-color: blue;
+            height: 100vh;
+            width: 100vw;
+            /* padding: 20px; */
+        }
+
+        #two{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            padding: 20px;
+            border: 4px dashed black;
+            border-radius: 50%;
+            margin: 20px;
+        }
+
+        #inside{
+            background-color: orange;
+            height: 20px;
+            display: none;
+        }
+        #span{
+            background-color: red;
+            /* display: inline-block; */
+            display: none;
+            height: 100px;
+            width: 100px;
+        }
+        #inside1{
+            height: 20px;
+            background-color: aqua;
+            /* display: none; */
+        }
+    </style>
+</head>
+<body>
+    <div id="one">
+        <!-- <div id="two">
+            <p>this is main content</p>
+        </div>
+        <div id="two">
+            <p>this is main content</p>
+        </div> -->
+        <div id="inside">this is now inline</div>
+        <span id="span">this is span</span>
+        <span id="span">this is span</span>
+        <div id="inside1">this was a div</div>
+    </div>
+</body>
+</html>

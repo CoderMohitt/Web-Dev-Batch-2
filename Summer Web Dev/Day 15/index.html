@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(40, 33, 33);
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        #parent{
+            display: flex;
+            /* justify-content: space-around; */
+            gap: 20px;
+        }
+        h1{
+            color: white;
+        }
+        .common{
+            height: 300px;
+            width: 200px;
+            background-color: orange;
+            border-radius: 20px;
+        }
+        #boxParent{
+            display: flex;
+            background-color: blue;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: flex-end;
+            height: 700px;
+        }
+        #login, #logout{
+            padding: 2px;
+            background-color: green;
+        }
+        #logout{
+            flex-grow: 2;
+        }
+        #login{
+            background-color: pink;
+            flex-grow: 1;
+        }
+        #parent3{
+            display: flex;
+            background-color: red;
+        }
+        #phone2{
+            order: -1;
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="parent">
+        <a href="">Store</a>
+        <a href="">Ipad</a>
+        <a href="">Mac</a>
+        <a href="">IPhone</a>
+        <a href="">Watch</a>
+    </div>
+
+    <!-- next section -->
+     <h1>Get to know iPhone.</h1>
+     <div id="boxParent">
+        <div class="common">iphone1</div>
+        <div class="common" id="phone2">iphone2</div>
+        <div class="common">iphone3</div>
+     </div>
+
+     <div id="parent3">
+        <div id="login">Login</div>
+        <div id="logout">Logout</div>
+     </div>
+</body>
+</html>
