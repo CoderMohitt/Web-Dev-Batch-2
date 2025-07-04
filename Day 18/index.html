@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Hover Effects and Transitions</title>
+    <style>
+        #main{
+            height: 100px;
+            width: 200px;
+            background-color: red;
+            transition: all 1s linear;
+        }
+        #main:hover{
+            background-color: green;
+            color: white;
+            font-weight: bold;
+            transform: scale(1.1);
+        }
+
+        #btn{
+            background-color: black;
+            color: white;
+        }
+        #btn:hover{
+            background-color: orange;
+        }
+
+        img{
+            transition: transform 1s linear;
+        }
+        img:hover{
+            border: 2px solid black;
+            transform: scale(1.1);
+        }
+        #container{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            transition: transform 1s linear 1s;
+        }
+        #container:hover {
+            transform: scale(1.05);
+}
+    </style>
+</head>
+<body>
+    <h1>Learn Hover Effects and Transitions</h1>
+    <div id="main">
+        this is some content
+    </div>
+
+    <button id="btn">Click Me</button>
+
+    <img width="200" src="https://i.redd.it/18hk1y46wo901.jpg" alt="">
+
+    <div id="container">
+
+    </div>
+</body>
+</html>
